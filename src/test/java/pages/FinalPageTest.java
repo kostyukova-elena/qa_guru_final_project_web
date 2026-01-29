@@ -42,4 +42,12 @@ public class FinalPageTest extends TestBase {
         });
     }
 
+    @Test
+    @DisplayName("Тест для проверки строки поиска на сайте")
+    void siteSearch5() {
+        step("Открываем главную страницу", () -> {
+            finalPage.openPage("https://dpd.ru/");
+        });
+    }
+
 }
