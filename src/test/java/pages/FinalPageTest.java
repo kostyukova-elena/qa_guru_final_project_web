@@ -12,11 +12,34 @@ public class FinalPageTest extends TestBase {
 
     @Test
     @DisplayName("Тест для проверки строки поиска на сайте")
-    void siteSearch() {
+    void siteSearch1() {
         step("Открываем главную страницу", () -> {
-            finalPage.openPage();
+            finalPage.openPage("https://www.etagi.com/");
         });
+    }
 
+    @Test
+    @DisplayName("Тест для проверки строки поиска на сайте")
+    void siteSearch2() {
+        step("Открываем главную страницу", () -> {
+            finalPage.openPage("https://strana.com/");
+        });
+    }
+
+    @Test
+    @DisplayName("Тест для проверки строки поиска на сайте")
+    void siteSearch3() {
+        step("Открываем главную страницу", () -> {
+            finalPage.openPage("https://tyumen.megafon.ru/");
+        });
+    }
+
+    @Test
+    @DisplayName("Тест для проверки строки поиска на сайте")
+    void siteSearch4() {
+        step("Открываем главную страницу", () -> {
+            finalPage.openPage("https://edadeal.ru/");
+        });
     }
 
 }
