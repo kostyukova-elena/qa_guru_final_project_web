@@ -3,50 +3,44 @@ package pages;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.ValueSource;
 
 import static io.qameta.allure.Allure.step;
 
-@Tag("etagi")
+@Tag("wildberries")
 public class FinalPageTest extends TestBase {
     FinalPage finalPage = new FinalPage();
 
-    @Test
-    @DisplayName("Тест для проверки строки поиска на сайте")
-    void siteSearch1() {
-        step("Открываем главную страницу", () -> {
-            finalPage.openPage("https://www.etagi.com/");
-        });
-    }
+//    @ValueSource(strings = {
+//            "Растущий стул",
+//            "Куртка зимняя женская"})
+//    @ParameterizedTest(name = "Для поискового запроса {0} должен отдавать не пустой список карточек")
+//    void searchResultsShouldNotBeEmpty1(String searchQuery) {
+//
+//        step("Открываем главную страницу", () -> {
+//            finalPage.openPage("https://www.wildberries.ru/");
+//        });
+//
+//        step("Поиск и закрытие всплывающего банера", () -> {
+//            finalPage.popupWrapper();
+//        });
+//
+//        step("Поиск по запросу", () -> {
+//            finalPage.setValue(searchQuery);
+//            finalPage.pressEnter();
+//        });
+//
+//        step("Проверка, что коллекция содержит хотя бы один элемент", () -> {
+//            finalPage.shouldBe();
+//        });
+//    }
 
     @Test
-    @DisplayName("Тест для проверки строки поиска на сайте")
-    void siteSearch2() {
+    @DisplayName("Добавления товара в корзину")
+    void siteSearch() {
         step("Открываем главную страницу", () -> {
-            finalPage.openPage("https://strana.com/");
-        });
-    }
-
-    @Test
-    @DisplayName("Тест для проверки строки поиска на сайте")
-    void siteSearch3() {
-        step("Открываем главную страницу", () -> {
-            finalPage.openPage("https://tyumen.megafon.ru/");
-        });
-    }
-
-    @Test
-    @DisplayName("Тест для проверки строки поиска на сайте")
-    void siteSearch4() {
-        step("Открываем главную страницу", () -> {
-            finalPage.openPage("https://edadeal.ru/");
-        });
-    }
-
-    @Test
-    @DisplayName("Тест для проверки строки поиска на сайте")
-    void siteSearch5() {
-        step("Открываем главную страницу", () -> {
-            finalPage.openPage("https://dpd.ru/");
+            finalPage.openPage("https://www.wildberries.ru/");
         });
     }
 

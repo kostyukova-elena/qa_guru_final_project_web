@@ -44,8 +44,8 @@ tasks.withType(Test).configureEach {
     }
 }
 
-tasks.register('etagi_test', Test) {
+tasks.register('wildberries_test', Test) {
     useJUnitPlatform {
-        includeTags("etagi")
+        includeTags("wildberries")
     }
 }
