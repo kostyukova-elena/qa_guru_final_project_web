@@ -37,11 +37,36 @@ public class FinalPageTest extends TestBase {
 //    }
 
     @Test
-    @DisplayName("Добавления товара в корзину")
+    @DisplayName("Открытие сайта wildberries")
     void siteSearch() {
         step("Открываем главную страницу", () -> {
             finalPage.openPage("https://www.wildberries.ru/");
         });
     }
 
+    @Test
+    @DisplayName("Открытие сайта Перекресток")
+    void siteSearch1() {
+        step("Открываем главную страницу", () -> {
+            finalPage.openPage("https://www.vprok.ru/");
+        });
+    }
+    @Test
+    @DisplayName("Открытие сайта Мегафон")
+    void siteSearch2() {
+        step("Открываем главную страницу", () -> {
+            finalPage.openPage("https://megafon.ru/");
+        });
+    }
+
+    @Test
+    @DisplayName("Открытие сайта доставка")
+    void siteSearch3() {
+        step("Открываем главную страницу", () -> {
+            finalPage.openPage("https://eda72.com/");
+        });
+    }
+
 }
+
+
