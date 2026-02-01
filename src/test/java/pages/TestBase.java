@@ -14,9 +14,10 @@ import java.util.Map;
 public class TestBase {
     @BeforeAll
     static void setupSelenideEnv() {
+//        Configuration.browserSize = "1440×900";
         Configuration.browserSize = "1920x1080";
         Configuration.pageLoadStrategy = "eager";
-        Configuration.timeout = 4000;
+        Configuration.timeout = 10000;
         Configuration.remote = "http://user1:1234@ru.selenoid.autotests.cloud/wd/hub";
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("selenoid:options", Map.of(
