@@ -1,5 +1,5 @@
-# Проект автоматизации тестирования для сайта [Перекрёсток](https://www.vprok.ru//)
-<a href="https://www.vprok.ru/"><img src="files/images/Перекресток.jpg" width="100" height="50"  alt="Java"/></a>
+# Проект автоматизации тестирования для сайта магазина [Перекрёсток](https://www.vprok.ru//)
+<a href="https://www.vprok.ru/"><img src="files/images/Перекресток.jpg" width="500" height="150"  alt="Перекрёсток"/></a>
 ## Содержание:
 
 - [Технологии и инструменты](#технологии-и-инструменты)
