@@ -1,6 +1,6 @@
 # Проект автоматизации тестирования для сайта магазина [Перекрёсток](https://www.vprok.ru//)
 <p align="center">
-<a href="https://www.vprok.ru/"><img src="files/images/Перекресток.jpg" width="500" height="150"  alt="Перекрёсток"/></a>
+<a href="https://www.vprok.ru/"><img src="files/images/Перекресток.png" width="500" height="150"  alt="Перекрёсток"/></a>
 </p>
 
 ## Содержание:
