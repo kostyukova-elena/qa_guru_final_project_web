@@ -15,7 +15,7 @@ public class FinalPageTest extends TestBase {
     ResultComponent resultComponent = new ResultComponent();
 
     @Test
-    @DisplayName("Проверка поиска товара на сайте")
+    @DisplayName("Тест для проверки строки поиска на сайте")
     void productSearch() {
         step("Открываем главную страницу", () -> {
             finalPage.openPage("https://www.vprok.ru/");
@@ -47,7 +47,7 @@ public class FinalPageTest extends TestBase {
     }
 
     @Test
-    @DisplayName("Добавление товара в корзину")
+    @DisplayName("Тест на проверку добавления товара в корзину")
     void AddingAnItemToTheCart() {
         step("Открываем главную страницу", () -> {
             finalPage.openPage("https://www.vprok.ru/");
